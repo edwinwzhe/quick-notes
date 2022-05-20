@@ -1,0 +1,41 @@
+note:
+  location: ~/quick-notes
+  file_ext: md
+  tmp_file_path: /tmp/quick-notes.tmp
+
+app:
+  prompt: 'quick-note> '
+
+actions:
+  c:
+    name: create
+    hint: 'create note'
+    executor: vim
+  d:
+    name: delete
+    hint: 'delete note'
+  v:
+    name: view
+    hint: 'view note'
+    executor: mdless
+  e:
+    name: edit
+    hint: 'edit note'
+    executor: vim
+  r:
+    name: restore
+    hint: 'restore deleted note'
+  q:
+    name: quit
+    hint: 'quit'
+
+search_by:
+  t:
+    name: tag
+    hint: 'search by tag'
+  n:
+    name: name
+    hint: 'search by name'
+  c:
+    name: content
+    hint: 'search by content'
